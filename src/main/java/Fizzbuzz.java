@@ -1,9 +1,12 @@
 public class Fizzbuzz {
     public String generate(int upto) {
-        if (upto == 1) {
-            return "1";
-        } else {
-            return "1, 2";
+        String returnList = "";
+        for (int i = 1; i <= upto; i++) {
+            returnList += Integer.toString(i);
+            if (i != upto) {
+                returnList += ", ";
+            }
         }
+        return returnList;
     }
 }
