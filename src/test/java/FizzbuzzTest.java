@@ -25,4 +25,12 @@ public class FizzbuzzTest {
         String expect = "1, 2, Fizz";
         assertEquals(expect, result);
     }
+
+    @Test
+    void testGenerateListsNumbersUpToFive() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result = subject.generate(5);
+        String expect = "1, 2, Fizz, 4, Buzz";
+        assertEquals(expect, result);
+    }
 }

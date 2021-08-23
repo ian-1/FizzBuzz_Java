@@ -4,6 +4,8 @@ public class Fizzbuzz {
         for (int i = 1; i <= upto; i++) {
             if (i % 3 == 0) {
                 returnList += "Fizz";
+            } else if (i % 5 == 0) {
+                returnList += "Buzz";
             } else {
                 returnList += Integer.toString(i);
             }
