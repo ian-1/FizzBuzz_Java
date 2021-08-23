@@ -1,5 +1,9 @@
 public class Fizzbuzz {
     public String generate(int upto) {
-        return "1";
+        if (upto == 1) {
+            return "1";
+        } else {
+            return "1, 2";
+        }
     }
 }
