@@ -17,4 +17,12 @@ public class FizzbuzzTest {
         String expect = "1, 2";
         assertEquals(expect, result);
     }
+
+    @Test
+    void testGenerateListsNumbersUpToThree() {
+        Fizzbuzz subject = new Fizzbuzz();
+        String result = subject.generate(3);
+        String expect = "1, 2, Fizz";
+        assertEquals(expect, result);
+    }
 }
